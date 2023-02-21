@@ -170,6 +170,7 @@ int main()
 		printf("#####       1 - Registro            #####\n"); 
 		printf("#####       2 - Consulta            #####\n");
 		printf("#####       3 - Deletar             #####\n");
+		printf("#####       4 - Sair do sistema     #####\n");
 		printf("#########################################\n\n");
 		printf("Opção: ");
 		scanf("%d",&opcao);
@@ -190,6 +191,13 @@ int main()
 			case 3:				
 				deletar(); //ir para a função deletar
 				break;
+				
+			case 4: // caso para encerrar o sistema
+				printf("#########################################\n");
+				printf("Agradecemos pelo uso de nosso sistema! ##\n");
+				printf("#########################################\n\n");
+				return 0; //retorna o valor 0 para finalizar o loop e encerrar o programa
+				break;	
 			
 			default: // se utilizar alguma opção invalida
 				printf("########################################################\n");
